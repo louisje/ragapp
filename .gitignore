@@ -11,3 +11,6 @@ create_llama/
 ollama/
 
 !config/*
+
+open-webui/
+ollama-webui/

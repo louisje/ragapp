@@ -1,2 +1,4 @@
-llamahub: {}
+llamahub:
+  duckduckgo.DuckDuckGoSearchToolSpec: {}
+  wikipedia.WikipediaToolSpec: {}
 local: {}

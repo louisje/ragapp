@@ -9,13 +9,42 @@ services:
 
   ollama:
     image: ollama/ollama:latest
+    container_name: ollama
     ports:
       - 11434:11434 
     volumes:
       - ./ollama:/root/.ollama
     networks:
       - ragapp-network
-  
+
+  ollama-webui:
+    image: ghcr.io/ollama-webui/ollama-webui:main
+    container_name: ollama-webui
+    volumes:
+      - ./ollama-webui:/app/backend/data
+    depends_on:
+      - ollama
+    ports:
+      - 80:8080
+    networks:
+      - ragapp-network
+    environment:
+      - 'OLLAMA_API_BASE_URL=http://ollama:11434/api'
+
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    container_name: open-webui
+    volumes:
+      - ./open-webui:/app/backend/data
+    depends_on:
+      - ollama
+    ports:
+      - 8080:8080
+    networks:
+      - ragapp-network
+    environment:
+      - OLLAMA_BASE_URL="http://ollama:11434"
+
   setup:
     image: curlimages/curl:latest
     networks:
