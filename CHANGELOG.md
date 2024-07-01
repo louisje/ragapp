@@ -1,5 +1,39 @@
 # ragbox
 
+## 0.0.11
+
+### Patch Changes
+
+- 1ceec37: Bump create-llama version to 0.1.13
+- 1ceec37: Add image generator tool
+
+## 0.0.10
+
+### Patch Changes
+
+- 4cfe656: Add OpenAPI tool config
+- 969374e: Add e2b code interpreter
+- 4cfe656: Bump create-llama version to 0.1.11
+- 4f178a6: Auto-submit forms on focus lost, clarified start up and improved UX for uploading files.
+
+## 0.0.9
+
+### Patch Changes
+
+- fef1d1a: Fix not showing file viewer
+- 67c3ac5: Fix the issue with losing chat config when switching providers
+- 9dd1704: Add a new config for Llama parse
+- 8803c69: Fix system prompt not working and improved Azure OpenAI validation
+- f7dc582: Bump create-llama version to 0.1.10
+- fef1d1a: Add timeout config for Ollama requests
+- e559534: Add config for conversation starter questions
+
+## 0.0.8
+
+### Patch Changes
+
+- 50537ff: Add support for Azure OpenAI provider
+
 ## 0.0.7
 
 ### Patch Changes
