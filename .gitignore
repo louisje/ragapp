@@ -1,17 +1,17 @@
-static/
-storage/
-
 **/__pycache__/
-
 **/.env
+**/.mypy_cache/
+**/node_modules/
+**/static/
 
-data/
-node_modules/
-create_llama/
-ollama/
-tool-output/
-
-!config/*
+**/*.sqlite
 
 open-webui/
 ollama-webui/
+data/
+ollama/
+
+# deployments
+deployments/**/data/
+!deployments/multiple-ragapps/data/traefik
+deployments/**/ollama/

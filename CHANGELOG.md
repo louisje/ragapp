@@ -1,5 +1,119 @@
 # ragbox
 
+## 0.1.2
+
+### Patch Changes
+
+- 9785b77: Add latest groq models and use original model name
+- 6e084a9: Support for adding a tracking script to the chat UI
+- 56858cc: Don't trigger indexing for each file (if multiple files are uploaded)
+- 947f865: Fix cannot use query engine
+- ea2af1b: Fix missing config in single deployment
+
+## 0.1.1
+
+### Patch Changes
+
+- 982e22a: Use system prompt template with role, backstory and goal
+- 8c9fac2: Fix image generator does not work with multi-agent
+
+## 0.1.0
+
+### Minor Changes
+
+- 8e73b74: Add support for multi-agents
+
+### Patch Changes
+
+- b96763e: Fix issues using LlamaCloud
+
+## 0.0.24
+
+### Patch Changes
+
+- 6cc4d2d: Add citations and next questions configs
+
+## 0.0.23
+
+### Patch Changes
+
+- 9f3c8a9: Add support for domain and https deployment
+
+## 0.0.22
+
+### Patch Changes
+
+- fb7e94f: Use volume for app persistence
+- e12d8b5: Fix data source is not shown
+
+## 0.0.21
+
+### Patch Changes
+
+- 7355971: Fixed broken file upload with LlamaParse
+- 870c038: Add RAGapp user and admin authentication (using Keycloak)
+- 0886008: Add UI configuration for API version used by Azure
+- 410bd09: Add rate limiting (number of chat messages per user) to chat API
+- cf584e5: Add possibility to select custom Ollama embedding models
+
+## 0.0.20
+
+### Patch Changes
+
+- e91ff64: remove striped path for default rag_app label template
+
+## 0.0.19
+
+### Patch Changes
+
+- 98ef118: Add manager app
+- fd340ad: Add support for gpt-4o-mini model
+
+## 0.0.18
+
+### Patch Changes
+
+- 8910838: Add Cohere reranker for improved retrieval results
+
+## 0.0.17
+
+### Patch Changes
+
+- ec84dd6: Add Groq provider
+
+## 0.0.16
+
+### Patch Changes
+
+- ade3163: Add Mistral AI provider
+
+## 0.0.15
+
+### Patch Changes
+
+- b7b1f7f: Bump llama-index version to 0.10.53
+
+## 0.0.14
+
+### Patch Changes
+
+- 6c7f7aa: Add support for LlamaCloud
+
+## 0.0.13
+
+### Patch Changes
+
+- c7cbb6e: Bump create-llama version to 0.1.17
+- c7cbb6e: Add support for T-Systems provider
+
+## 0.0.12
+
+### Patch Changes
+
+- d901b4e: Add embedding model and base api config for OpenAI provider
+- debfe4e: Add loading state to forms
+- 0342480: Add custom tool prompt to system prompt
+
 ## 0.0.11
 
 ### Patch Changes
