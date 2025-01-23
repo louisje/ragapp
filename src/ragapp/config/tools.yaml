@@ -1,4 +1,6 @@
-llamahub:
-  duckduckgo.DuckDuckGoSearchToolSpec: {}
-  wikipedia.WikipediaToolSpec: {}
-local: {}
+# For compatibility with create-llama app.
+# Do not update this file.
+local:
+  interpreter:
+    api_key: 'dummy_key'
+llamahub: {}

@@ -1,5 +1,27 @@
 # ragbox
 
+## 0.1.5
+
+### Patch Changes
+
+- 7b9c24e: Fix the UI crash when displaying the code block
+
+## 0.1.4
+
+### Patch Changes
+
+- 3af2d6e: Fix cannot show document files in multiple deployments mode
+- 3af2d6e: Support uploading with more file formats with LlamaParse
+
+## 0.1.3
+
+### Patch Changes
+
+- cb3a9ad: Add agent templates and new tools (DocumentGenerator and CodeGenerator)
+- df326d7: Fix name of agent as tool include special characters
+- 5b917e6: Use output from agent directly
+- e4d7a91: Bump llama_index to version 0.11.11
+
 ## 0.1.2
 
 ### Patch Changes
