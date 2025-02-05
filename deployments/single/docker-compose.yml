@@ -31,6 +31,14 @@ services:
     environment:
       - 'OLLAMA_API_BASE_URL=http://ollama:11434/api'
 
+  ddg-chat:
+    image: leafmoes/ddg-chat:latest
+    container_name: ddg-chat
+    ports:
+      - 8787:8787
+    networks:
+      - ragapp-network
+
   open-webui:
     image: ghcr.io/open-webui/open-webui:main
     container_name: open-webui
