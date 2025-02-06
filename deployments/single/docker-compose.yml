@@ -7,11 +7,29 @@ services:
     networks:
       - ragapp-network
 
+  litellm:
+    image: ghcr.io/berriai/litellm:main-latest
+    container_name: litellm
+    command: [ "--config", "/app/config.yaml", "--debug" ]
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./litellm.yaml:/app/config.yaml
+    depends_on:
+      - ollama
+      - ddg-chat
+    networks:
+      - ragapp-network
+    environment:
+      - 'DUMMY_API_KEY=sk-1234'
+      - 'OLLAMA_API_BASE_URL=http://ollama:11434/api'
+      - 'DDG_CHAT_API_BASE_URL=http://ddg-chat:8787/v1'
+
   ollama:
     image: ollama/ollama:latest
     container_name: ollama
     ports:
-      - 11434:11434 
+      - "11434:11434"
     volumes:
       - ./ollama:/root/.ollama
     networks:
@@ -35,7 +53,7 @@ services:
     image: leafmoes/ddg-chat:latest
     container_name: ddg-chat
     ports:
-      - 8787:8787
+      - "8787:8787"
     networks:
       - ragapp-network
 

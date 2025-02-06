@@ -1,0 +1,26 @@
+model_list:
+  - model_name: gpt-4o-mini
+    litellm_params:
+      model: openai/gpt-4o-mini
+      api_base: "os.environ/DDG_CHAT_API_BASE_URL"
+      api_key: "os.environ/DUMMY_API_KEY"
+  - model_name: mixtral-8x7b
+    litellm_params:
+      model: openai/mixtral-8x7b
+      api_base: "os.environ/DDG_CHAT_API_BASE_URL"
+      api_key: "os.environ/DUMMY_API_KEY"
+  - model_name: llama-3.1-70b
+    litellm_params:
+      model: openai/llama-3.1-70b
+      api_base: "os.environ/DDG_CHAT_API_BASE_URL"
+      api_key: "os.environ/DUMMY_API_KEY"
+  - model_name: claude-3-haiku
+    litellm_params:
+      model: openai/claude-3-haiku
+      api_base: "os.environ/DDG_CHAT_API_BASE_URL"
+      api_key: "os.environ/DUMMY_API_KEY"
+  - model_name: deepseek-r1
+    litellm_params:
+      model: ollama/deepseek-r1
+      api_base: "os.environ/OLLAMA_API_BASE_URL"
+      api_key: "os.environ/DUMMY_API_KEY"
