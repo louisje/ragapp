@@ -39,3 +39,8 @@ model_list:
       model: openai/meta-llama3.3-70b-inst-32k
       api_base: "os.environ/TWCC_API_BASE_URL"
       api_key: "os.environ/TWCC_API_KEY"
+  - model_name: llama3.2-ffm-11b-v-32k-chat
+    litellm_params:
+      model: openai/llama3.2-ffm-11b-v-32k-chat
+      api_base: "os.environ/TWCC_API_BASE_URL"
+      api_key: "os.environ/TWCC_API_KEY"
