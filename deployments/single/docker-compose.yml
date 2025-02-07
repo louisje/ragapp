@@ -22,8 +22,10 @@ services:
       - ragapp-network
     environment:
       - 'DUMMY_API_KEY=sk-1234'
-      - 'OLLAMA_API_BASE_URL=http://ollama:11434/api'
+      - 'TWCC_API_KEY=${TWCC_API_KEY}'
+      - 'OLLAMA_API_BASE_URL=http://ollama:11434'
       - 'DDG_CHAT_API_BASE_URL=http://ddg-chat:8787/v1'
+      - 'TWCC_API_BASE_URL=https://api-ams.twcc.ai/api/models'
 
   ollama:
     image: ollama/ollama:latest
@@ -64,6 +66,7 @@ services:
       - ./open-webui:/app/backend/data
     depends_on:
       - ollama
+      - ddg-chat
     ports:
       - 8081:8080
     networks:

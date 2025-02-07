@@ -11,6 +11,7 @@ ollama-webui/
 data/
 ollama/
 config/
+scripts
 
 # deployments
 deployments/**/data/
